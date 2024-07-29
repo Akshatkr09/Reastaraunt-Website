@@ -269,72 +269,56 @@ h3{
   }
 
 
-@media (max-width: 1024px) {
-    .navbar ul {
+@media (max-width: 768px) {
+    .navlist {
+        display: none; /* Hide the navigation list by default */
         flex-direction: column;
-    }
-
-    .navbar ul li {
-        margin-bottom: 0.5rem;
-    }
-
-    .intro {
-        font-size: 1.8rem;
-    }
-
-    .btn2 {
-        padding: 0.8rem 2rem;
-    }
-
-    .section1, .section2 {
-        font-size: 1.2rem;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Darker background for mobile */
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
         padding: 1rem;
     }
-}
 
- .hamburger {
+    .navlist.active {
+        display: flex; /* Show the navigation list when active */
+    }
+
+    .navlist li {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
         display: flex; /* Show the hamburger menu icon on mobile */
     }
 
-@media (max-width: 768px) {
-    .navbar ul li a {
-        font-size: 1.4rem; /* Adjust font size for smaller screens */
-    }
-
-    .intro {
+    .navbar .logo {
         font-size: 1.5rem;
     }
 
-    .btn2 {
-        padding: 0.8rem 1.5rem;
-    }
-
-    .section1, .section2 {
-        font-size: 1rem;
-        padding: 0.5rem;
+    .button-1 {
+        display: none; /* Hide the button on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    .navbar ul li a {
-        font-size: 1.2rem; /* Further adjust for very small screens */
+    .navbar .logo {
+        font-size: 1.25rem;
     }
 
-    .intro {
-        font-size: 1.2rem;
+    .navlist li a {
+        font-size: 0.875rem;
+        padding: 0.5rem;
     }
 
-    .btn2 {
-        padding: 0.5rem 1rem;
+    .button-1 .btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
     }
 
-    .section1, .section2 {
-        font-size: 0.9rem;
-        padding: 0.2rem;
-    }
-
-    .img1 {
-        height: auto;
-        max-width: 100%;
+    .button-bn .btn2 {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
     }
 }
