@@ -257,9 +257,50 @@ h3{
 
 
 
-@media (max-aspect-ratio: 16/9){
-    .VideoMain{
-    width: 100%;
-    height: auto;
+@media (max-width: 768px) {
+    .navbar ul li a {
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
     }
+
+    .intro {
+        font-size: 1.5rem;
     }
+
+    .btn2 {
+        padding: 1rem 2rem;
+    }
+
+    .section1, .section2 {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .img1 {
+        height: auto;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 1.2rem; /* Further adjust for very small screens */
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .btn2 {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .section1, .section2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .img1 {
+        height: auto;
+        max-width: 100%;
+    }
+}
