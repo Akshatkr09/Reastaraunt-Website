@@ -256,6 +256,28 @@ h3{
   }
 
 
+@media (max-width: 1024px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    .btn2 {
+        padding: 0.8rem 2rem;
+    }
+
+    .section1, .section2 {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar ul li a {
@@ -267,17 +289,12 @@ h3{
     }
 
     .btn2 {
-        padding: 1rem 2rem;
+        padding: 0.8rem 1.5rem;
     }
 
     .section1, .section2 {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    .img1 {
-        height: auto;
-        max-width: 90%;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 }
 
@@ -291,12 +308,12 @@ h3{
     }
 
     .btn2 {
-        padding: 0.8rem 1.5rem;
+        padding: 0.5rem 1rem;
     }
 
     .section1, .section2 {
-        font-size: 1rem;
-        padding: 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.2rem;
     }
 
     .img1 {
