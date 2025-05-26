@@ -137,13 +137,10 @@ h3{
     display: inline-block;
     justify-content: space-between;
 }
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 45%;
-    padding: 0px 25px;
-    
+.navbar ul li a {
+  font-size: 1.4rem;
 }
+
 .navbar li a:hover {
     text-decoration: none;
     color: rgba(255, 213, 0, 0.655);
@@ -179,12 +176,28 @@ h3{
     padding-bottom: 1rem;
     /* color: #00000000; */
 }
-.img1 {
-    margin: 15px;
-    height: 325px;
-    border-radius: 30px;
-    box-shadow: 7px 7px 7px #0c0909b3 ;
+
+
+
+.section1, .section2 {
+  flex-wrap: wrap;
+  gap: 2rem;
 }
+@media (max-width: 768px) {
+  .section1, .section2 {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.img1 {
+  width: 100%;
+  max-width: 325px;
+  height: auto;
+}
+
 
 
 
@@ -270,37 +283,26 @@ h3{
 
 
 @media (max-width: 768px) {
-    .navlist {
-        display: none; /* Hide the navigation list by default */
-        flex-direction: column;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Darker background for mobile */
-        position: absolute;
-        top: 60px; /* Adjust as needed */
-        left: 0;
-        padding: 1rem;
-    }
+  .section1, .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .navlist.active {
-        display: flex; /* Show the navigation list when active */
-    }
+  .intro {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
 
-    .navlist li {
-        margin: 0.5rem 0;
-    }
+  .btn2 {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
 
-    .hamburger {
-        display: flex; /* Show the hamburger menu icon on mobile */
-    }
-
-    .navbar .logo {
-        font-size: 1.5rem;
-    }
-
-    .button-1 {
-        display: none; /* Hide the button on smaller screens */
-    }
+  .footer-basic {
+    font-size: 1.4rem;
+  }
 }
+
 
 @media (max-width: 480px) {
     .navbar .logo {
