@@ -6,7 +6,7 @@
 }
 
 html{
-font-size: 62.5px;
+font-size: 62.5%;
 scroll-behavior: smooth;
 }
 .bg-color{
@@ -177,12 +177,12 @@ h3{
     /* color: #00000000; */
 }
 
-
-
 .section1, .section2 {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+
 @media (max-width: 768px) {
   .section1, .section2 {
     flex-direction: column;
